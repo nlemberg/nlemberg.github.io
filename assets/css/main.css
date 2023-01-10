@@ -254,6 +254,10 @@ h6 {
   margin: 0 0 0.5625em 0;
 }
 
+h4 {
+  color: var(--color-primary-accent);
+}
+
 h1 a,
 h2 a,
 h3 a,
