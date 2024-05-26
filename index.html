@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Naama Lemberg | Full-stack Web Developer</title>
+    <title>Naama Lemberg | DevOps Engineer</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -15,14 +15,14 @@
       <header>
         <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
         <h1 id="logo"><a href="#">Naama Lemberg</a></h1>
-        <p>Full-Stack Web Developer</p>
+        <p>DevOps Engineer</p>
       </header>
       <nav id="nav">
         <ul>
-          <li><a href="#one" class="active">About</a></li>
-          <li><a href="#two">Development Experience</a></li>
-          <li><a href="#three">My Projects</a></li>
-          <li><a href="#four">Get in Touch</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Get in Touch</a></li>
         </ul>
       </nav>
       <footer>
@@ -60,8 +60,8 @@
     <div id="wrapper">
       <!-- Main -->
       <div id="main">
-        <!-- One -->
-        <section id="one">
+        <!-- about -->
+        <section id="about">
           <div class="image main" data-position="center">
             <img src="images/banner.jpg" alt="" />
           </div>
@@ -84,37 +84,69 @@
               brother's leg. <br /><br />
               Much like my personal interests, my work experience varies quite a
               bit. I've been a customer support rep, a tutor, an editor, a
-              museum tour guide and program developer, a content
+              museum tour guide and educational program developer, a content
               manager-turned-campaign manager-turned-optimization expert in an
-              ad-tech company.
+              ad-tech company, a software developer for an aerodynamics research
+              lab, and more.
               <br /><br />
               At each and every workplace I learned valuable skills that I carry
               with me wherever I go. <br /><br />
-              <strong>Today I'm a full-stack web developer.</strong>
+              <strong>Today I'm a DevOps engineer.</strong>
               <strong>Where am I going next? You tell me.</strong>
             </p>
           </div>
         </section>
 
-        <!-- Two -->
-        <section id="two">
+        <!-- experience -->
+        <section id="experience">
           <div class="container">
+            <h3>DevOps Engineering Training</h3>
+            <h4>Develeap</h4>
+            <p>
+              Intensive 900-hour DevOps training program, hands-on experience in
+              current DevOps technologies and practices. <br />
+              <span class="under">Final project:</span>
+            </p>
+            <ul>
+              <li>
+                <b>App</b>: Flask backend and MySQL database. Containerized with
+                <b>Docker</b> and readily deployed with Docker-compose. Complete
+                with <b>Jenkins CI/CD</b>.
+              </li>
+              <li>
+                <b>Infrastructure as code (IaC)</b>: provisioning of
+                <b>AWS EKS</b> cluster with <b>Terraform</b>.
+              </li>
+              <li>
+                <b>GitOps</b>: cluster deployment and management using
+                <b>ArgoCD</b> with the app-of-apps pattern. Including app and
+                DB, ingress, certificate management, Elastic stack logging,
+                Prometheus stack monitoring.
+              </li>
+            </ul>
+            <p>
+              <span class="under">Additional projects:</span> multi-stage
+              Dockerfiles, <b>mvn</b> lifecycle management, <b>Nginx</b> reverse
+              proxy, static file serving, certificate issuing,
+              <b>Helm</b> charts, and more.
+            </p>
+            <!-------------->
             <h3>Development Experience</h3>
             <h4>Meadow Aerodynamics Lab, Tel Aviv University</h4>
             <ul>
               <li>
-                Collaborating with mechanical engineers on experiment to reduce
-                drag in trucks using active flow control
-              </li>
-              <li>
-                Developing a GUI for experiment control in Python: sensor
+                Developed a GUI for experiment control in Python: sensor
                 connectivity, data logging and visualization, real-time dynamic
                 plotting
               </li>
               <li>
-                Integrating new code with existing software; troubleshooting and
-                improving legacy code; migrating plotting functionalities to
-                newer libraries
+                Collaborated with mechanical engineers on experiment to reduce
+                drag in trucks using active flow control
+              </li>
+              <li>
+                Integrated new code with existing software, including
+                troubleshooting and improving legacy code; migrated plotting
+                functionalities to newer libraries
               </li>
             </ul>
 
@@ -135,17 +167,106 @@
                 Robo 3T, MongoDB Compass
               </li>
               <li>
-                Version control and Deployment using Github and CI/CD pipelines
+                Version control and deployment using Github and CI/CD pipelines
               </li>
             </ul>
           </div>
         </section>
 
-        <!-- Three -->
-        <section id="three">
+        <!-- projects -->
+        <section id="projects">
           <div class="container">
-            <h3>My Projects</h3>
-            <p>I'm always working on something new.</p>
+            <h3>DevOps Portfolio</h3>
+            <div class="features">
+              <article>
+                <a
+                  href="https://github.com/nlemberg/hurdle-archive"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="image"
+                  ><img
+                    src="images/dockerized_app.png"
+                    alt="Hurdle Archive App"
+                /></a>
+                <div class="inner">
+                  <h4>Hurdle Archive - Dockerized App + Jenkins CI/CD</h4>
+                  <p>
+                    A web application that lets registered users play and track
+                    their Hurdle games. It extends the single daily game
+                    experience of Hurdle to an archive of thousands of games.
+                    <br />Flask backend with MySQL database.
+                    <br />
+                    <a
+                      href="https://github.com/nlemberg/hurdle-archive"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="icon brands fa-github"
+                      >&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a
+                    >
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a
+                  href="https://github.com/nlemberg/hurdle-archive-infra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="image"
+                  ><img
+                    src="images/AWS_Infrastructure.png"
+                    alt="Hurdle Archive AWS Infrastructure"
+                /></a>
+                <div class="inner">
+                  <h4>Hurdle Archive - Infrastructure as code (IaC)</h4>
+                  <p>
+                    Deploys the Hurdle Archive application on an Amazon EKS
+                    cluster, leveraging Terraform to automate the provisioning
+                    of the necessary infrastructure on AWS.
+                    <br />
+                    <a
+                      href="https://github.com/nlemberg/hurdle-archive-infra"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="icon brands fa-github"
+                      >&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a
+                    >
+                  </p>
+                </div>
+              </article>
+              <article>
+                <a
+                  href="https://github.com/nlemberg/hurdle-archive-gitops"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="image"
+                  ><img
+                    src="images/Cluster_Diagram.png"
+                    alt="Hurdle Archive App"
+                /></a>
+                <div class="inner">
+                  <h4>Hurdle Archive - GitOps</h4>
+                  <p>
+                    Employing ArgoCD’s app-of-apps pattern, this code
+                    facilitates the declarative management and continuous
+                    deployment of the Hurdle Archive application and its
+                    associated infrastructure.
+                    <br />
+                    <a
+                      href="https://github.com/nlemberg/hurdle-archive-gitops"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="icon brands fa-github"
+                      >&nbsp;&nbsp;Github&nbsp;&nbsp;&nbsp;&nbsp;</a
+                    >
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="container">
+            <h3>Dev Projects</h3>
             <div class="features">
               <article>
                 <a
@@ -163,7 +284,7 @@
                     Tech stack: NodeJS, Express, MongoDB/Atlas, React, Redux,
                     Material UI
                     <br />
-                    * Attn: live app initial loading time up to 60 secs!
+                    * Attention: live app initial loading time up to 60 secs!
                     <br />
                     <a
                       href="https://github.com/nlemberg/SeeingMonkeyCinema-ng"
@@ -241,8 +362,8 @@
           </div>
         </section>
 
-        <!-- Four -->
-        <section id="four">
+        <!-- contact -->
+        <section id="contact">
           <div class="container">
             <h3>Get in Touch</h3>
             <p>
